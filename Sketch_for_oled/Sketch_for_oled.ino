@@ -25,14 +25,14 @@ void setup()   {
 void loop() {
   long runtime = millis() / 1000;
   long seconds = runtime % 60;
-  long minutes = (sec / 60) % 60;
+  long minutes = (seconds / 60) % 60;
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
   display.println("Stopwatch in seconds:");
   display.setTextColor(WHITE);
   display.setTextSize(2);
-  display.println(sec + ":" + min);
+  display.println(runtime);
   display.setTextSize(1);
   display.setTextColor(BLACK, WHITE);
   display.setCursor(0, 25);

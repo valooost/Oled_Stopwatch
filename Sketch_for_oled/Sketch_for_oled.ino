@@ -24,8 +24,8 @@ void setup()   {
 
 void loop() {
   long runtime = millis() / 1000;
-  long sec = runtime % 60;
-  long min = (sec / 60) % 60;
+  long seconds = runtime % 60;
+  long minutes = (sec / 60) % 60;
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
